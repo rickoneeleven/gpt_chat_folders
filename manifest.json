@@ -1,0 +1,21 @@
+{
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "style.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "https://chat.openai.com/*" ]
+   } ],
+   "description": "A tool to organize your ChatGPT chats into folders",
+   "host_permissions": [ "https://chat.openai.com/*" ],
+   "icons": {
+      "128": "logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg5rcv/sQeVJZxWHuWSW7mKY8LcYBqEIEJYK+JdsllOMzQFZLon+Ws4n5HfslY+Rkb7aRSnpqAYy4hQY71eDv146jbpnlo/9oDidjGZZ5Kybh/aHMr2kjryUPNKKCNxY7M2mI3ONCRwUfq/9pXycPANKI7B3GlTaazLJPkoxcW09wJKGsR7hLMKt8PnMf7a4YELSknUPPuiEJPVQrZLy26xETLE360Woq2y+eZwYeNLz1qEFoP4QT+BzxWEyRmskFu+GAeSEcSSkResbpp2GZNTqee0TPxVPyOmMANovbZXqErnWGkhfHHrn/Y2b/HazB6PCUq7UXiMZ1ZYfKcERMyQIDAQAB",
+   "manifest_version": 3,
+   "name": "ChatGPT Chat Organizer - Folders",
+   "permissions": [ "storage", "webRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4"
+}
